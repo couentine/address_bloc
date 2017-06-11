@@ -115,8 +115,8 @@ class MenuController
           num = gets.chomp.to_i
           
           if num < @address_book.entries.count
-       puts  @address_book.entries[num+1]
-       puts "enter to go to the main menu"
+       puts  @address_book.entries[num]
+       puts "Press enter to go to the main menu"
        gets.chomp
        system "clear"
      else
