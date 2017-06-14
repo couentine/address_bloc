@@ -192,16 +192,20 @@ class MenuController
 
      case selection
        when "d"
+         
          system "clear"
          delete_entry(entry)
          main_menu
        when "e"
+         
          edit_entry(entry)
          system "clear"
          main_menu
        when "m"
+         
          system "clear"
          main_menu
+         
        else
          system "clear"
          puts "#{selection} is not a valid input"
