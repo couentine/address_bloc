@@ -169,5 +169,17 @@ describe "#binary_search" do
      
 end
 
+describe "demolish" do 
+    it "erase all entries" do
+        book.add_entry("ada","000-000-000","aaaaa@aaaa.com")
+        book.add_entry("ada","000-000-000","aaaaa@aaaa.com")
+        book.add_entry("ada","000-000-000","aaaaa@aaaa.com")
+        
+        book.demolish
+        expect(book.entries.size).to eq 0
+        end
+end
+
+
 
 end

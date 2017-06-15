@@ -66,5 +66,12 @@ end
     return nil
    end
    
+    def demolish
+     @entries.each do |entry|
+      address_book.entries.delete(entry)
+   end
+   
+
  end
  
+end
